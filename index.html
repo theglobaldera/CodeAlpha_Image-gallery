@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust Image Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+   <!-- Hero Section -->
+<section class="hero d-flex justify-content-center align-items-center text-white text-center">
+  <div class="overlay"></div>
+  <h1 class="position-relative z-1">Welcome to Wanderlust Gallery</h1>
+</section>
+
+  <!-- Category Buttons -->
+  <div class="container text-center my-4">
+    <a href="#mountains" class="btn btn-outline-primary m-1">Mountains</a>
+    <a href="#beach" class="btn btn-outline-primary m-1">Beach</a>
+    <a href="#city" class="btn btn-outline-primary m-1">City</a>
+  </div>
+
+  <!-- Category Cards Preview -->
+  <div class="container my-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <a href="#mountains" class="text-decoration-none">
+          <div class="card h-100">
+            <img src="/Mountain Majesty_ Alpine Lake & Wildflowers at Sunset.jfif" class="card-img-top" alt="Mountains">
+            <div class="card-body text-center">
+              <h5 class="card-title">Mountains</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#beach" class="text-decoration-none">
+          <div class="card h-100">
+            <img src="/🌴🥥.jfif" class="card-img-top" alt="Beach">
+            <div class="card-body text-center">
+              <h5 class="card-title">Beach</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#city" class="text-decoration-none">
+          <div class="card h-100">
+            <img src="/Lagos City Life of Hustle and Bustle.jfif" class="card-img-top" alt="City">
+            <div class="card-body text-center">
+              <h5 class="card-title">City</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Category Sections -->
+  <div class="container my-5">
+    <h2 id="mountains" class="text-center mb-4">Mountains</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3"><img src="/Mountains.jfif" class="img-fluid gallery-img" alt="Mountain" data-category="mountains" data-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal"></div>
+      <div class="col-6 col-md-3"><img src="/People In This Online Group Are Sharing Photos Of The Most Beautiful Places They’ve Discovered.jfif" class="img-fluid gallery-img" alt="Mountain" data-category="mountains" data-index="1" data-bs-toggle="modal" data-bs-target="#lightboxModal"></div>
+    <div class="col-6 col-md-3"><img src="/87c9ae74-d42f-4769-912b-094c14e2c53e.jfif" class="img-fluid gallery-img" alt="City" data-category="mountains" data-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal"></div>
+      <div class="col-6 col-md-3"><img src="/6731a91a-b200-4fba-aedf-e534f07169e2.jfif" class="img-fluid gallery-img" alt="City" data-category="mountains" data-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal"></div>
+  
+    </div>
+
+    <h2 id="beach" class="text-center mt-5 mb-4">Beach</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3"><img src="/ccf1ad0e-1c1d-4433-ae9f-48ebfacf85da.jfif" class="img-fluid gallery-img" alt="Beach" data-category="beach" data-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal"></div>
+      <div class="col-6 col-md-3"><img src="/3b01c9ee-bf8d-458b-9051-de4fc39ab5e4.jfif" class="img-fluid gallery-img" alt="Beach" data-category="beach" data-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal"></div>
+    <div class="col-6 col-md-3"><img src="/b766e8a7-deb9-4e8b-a56c-f6c06502df4e.jfif" class="img-fluid gallery-img" alt="beach" data-category="beach" data-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal"></div>
+      <div class="col-6 col-md-3"><img src="/Evenings by the beach 🌺💓.jfif" class="img-fluid gallery-img" alt="City" data-category="beach" data-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal"></div>
+    
+    </div>
+
+    <h2 id="city" class="text-center mt-5 mb-4">City</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3"><img src="/lagos✨.jfif" class="img-fluid gallery-img" alt="City" data-category="city" data-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal"></div>
+      <div class="col-6 col-md-3"><img src="/a01be30a-3e0f-4a59-bc5f-45476add3cae.jfif" class="img-fluid gallery-img" alt="City" data-category="city" data-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal"></div>
+    <div class="col-6 col-md-3"><img src="/Oshodi Lagos.jfif" class="img-fluid gallery-img" alt="City" data-category="city" data-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal"></div>
+      <div class="col-6 col-md-3"><img src="/Oshodi, Lagos.jfif" class="img-fluid gallery-img" alt="City" data-category="city" data-index="0" data-bs-toggle="modal" data-bs-target="#lightboxModal"></div>
+    
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0 position-relative">
+      <button type="button" class="btn-close btn-close-white position-absolute end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+      <button id="prevBtn" class="position-absolute top-50 start-0 translate-middle-y btn btn-dark btn-sm">←</button>
+      <img src="" alt="Gallery View" id="lightboxImage" class="w-100 rounded">
+      <button id="nextBtn" class="position-absolute top-50 end-0 translate-middle-y btn btn-dark btn-sm">→</button>
+    </div>
+  </div>
+</div>
+
+  <!-- JavaScript for Bootstrap and Future Lightbox -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const galleryImgs = document.querySelectorAll('.gallery-img');
+  const lightboxImg = document.getElementById('lightboxImage');
+  const modal = new bootstrap.Modal(document.getElementById('lightboxModal'));
+  let currentGroup = [], currentIndex = 0;
+
+  galleryImgs.forEach(img => {
+    img.addEventListener('click', () => {
+      const category = img.dataset.category;
+      currentGroup = Array.from(document.querySelectorAll(`.gallery-img[data-category='${category}']`));
+      currentIndex = parseInt(img.dataset.index);
+      showImage(currentIndex);
+    });
+  });
+
+  function showImage(index) {
+    if (currentGroup.length) {
+      lightboxImg.src = currentGroup[index].src;
+      lightboxImg.alt = currentGroup[index].alt;
+    }
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length;
+    showImage(currentIndex);
+  });
+
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % currentGroup.length;
+    showImage(currentIndex);
+  });
+</script>
+
+</body>
+</html>
+
+        
